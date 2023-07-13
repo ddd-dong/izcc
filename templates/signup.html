@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+        <meta name="description" content="" />
+        <meta name="author" content="" />
+        <title>IZCC</title>
+        <!-- Favicon-->
+        <link rel="icon" type="image/x-icon" href="static/IZCC1.png" />
+        <!-- Bootstrap icons-->
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css" rel="stylesheet" />
+        <!-- Core theme CSS (includes Bootstrap)-->
+        <link href="static/styles.css" rel="stylesheet" />
+    </head>
+    <body class="d-flex flex-column">
+        <main class="flex-shrink-0">
+            <!-- Navigation-->
+            <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+                <div class="container px-5">
+                    <a class="navbar-brand" href="{{url_for('home')}}">IZCC</a>
+                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation"><span class="navbar-toggler-icon"></span></button>
+                    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                        <ul class="navbar-nav ms-auto mb-lg-0">
+                            <li class="nav-item"><a class="nav-link" href="{{url_for('home')}}">首頁</a></li>
+                            <li class="nav-item"><a class="nav-link" href="{{url_for('about')}}">關於我們</a></li>
+                            <li class="nav-item"><a class="nav-link" href="{{url_for('class_intr')}}">課程介紹</a></li>
+                            <li class="nav-item"><a class="nav-link" href="{{url_for('sign_up')}}">報名</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </nav>
+            
+        </main>
+    
+        <header>
+            <div class="container px-5">
+                <div class="row justify-content-center">
+                    <div class="col-lg-8 col-xxl-6">
+                        <div class="text-center my-5">
+                            <h1 class="fw-bolder mb-3">報名資訊</h1>
+                            <p class="lead fw-normal text-muted mb-4">報名時間：即日起至7/25 </p>
+                            <p class="lead fw-normal text-muted mb-4">公告錄取名單：7/26 </p>
+                            <p class="lead fw-normal text-muted mb-4">費用：一人2500</p>
+                         
+                    
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </header>
+        <div class="container">
+            <br></br>
+            <form method="post" action="{{ url_for('save_data') }}" enctype="multipart/form-data">
+                <br></br>
+                <h1>個人</h1>
+                <div class="mb-3">
+                    <label for="email" class="form-label">電子郵件</label>
+                    <input type="email" class="form-control" id="email" name="your_email" required>
+                </div>
+                
+                <div class="mb-3">
+                    <label for="name" class="form-label">姓名</label>
+                    <input type="text" class="form-control" id="name" name="your_name" required>
+                </div>
+                <div class="mb-3">
+                    <label for="phone" class="form-label">學校（112會考的填放榜高中、其餘國中生填國中)</label>
+                    <input type="text" class="form-control" id="phone" name="your_school" required>
+                </div>
+    
+                <div class="mb-3">
+                    <label for="phone" class="form-label">本人電話號碼</label>
+                    <input type="text" class="form-control" id="phone" name="your_phone" required>
+                </div>
+                <div class="mb-3">
+                    <label for="phone" class="form-label">本人出生年月日</label>
+                    <input type="text" class="form-control" id="phone" name="your_birthday" required>
+                </div>
+                <div class="mb-3">
+                    <label for="phone" class="form-label">本人身份證字號</label>
+                    <input type="text" class="form-control" id="phone" name="your_identity_card_id" required>
+                </div>
+                <h1>緊急聯絡人</h1>
+                <div class="mb-3">
+                    <label for="phone" class="form-label">緊急聯絡人姓名</label>
+                    <input type="text" class="form-control" id="phone" name="parent_name" required>
+                </div>
+                <div class="mb-3">
+                    <label for="phone" class="form-label">緊急聯絡人電話</label>
+                    <input type="text" class="form-control" id="phone" name="parent_phone" required>
+                </div>
+                <div class="mb-3">
+                    <label for="phone" class="form-label">緊急聯絡人身份證字號</label>
+                    <input type="text" class="form-control" id="phone" name="parent_identity_card_id" required>
+                </div>
+                <div class="mb-3">
+                    <label for="phone" class="form-label">緊急聯絡人生日</label>
+                    <input type="text" class="form-control" id="phone" name="parent_birthday" required>
+                </div>
+                <div class="mb-3">
+                    <label for="phone" class="form-label">與緊急聯絡人的關係</label>
+                    <input type="text" class="form-control" id="phone" name="parent_relation" required>
+                </div>
+    
+                <h1>其他</h1>
+                <div class="mb-3">
+                    <label for="diet" class="form-label">用餐需求</label>
+                    <select class="form-select" id="diet" name="diet" required>
+                        <option value="" selected>請選擇</option>
+                        <option value="葷">葷食</option>
+                        <option value="素">素食</option>
+                    </select>
+                </div>
+                <div class="mb-3">
+                    <label class="form-label">是否有癲癇病史</label>
+                    <select class="form-select" id="diet" name="epilepsy" required>
+                        <option value="" selected>請選擇</option>
+                        <option value="葷">是</option>
+                        <option value="素">否</option>
+                    </select>
+                </div>
+                <div class="mb-3">
+                    <label class="form-label">訓服尺寸</label>
+                    <select class="form-select" id="diet" name="cloth" required>
+                        <option value="" selected>請選擇</option>
+                        <option value="葷">XS</option>
+                        <option value="葷">S</option>
+                        <option value="素">M</option>
+                        <option value="素">L</option>
+                        <option value="素">XL</option>
+                        <option value="素">2L</option>
+                    </select>
+                    <img class="mx-auto d-block img-fluid rounded-3 my-5"  src="IMG_8385.jpg" alt="">
+                </div>
+                <div class="mb-3">
+                    <label for="phone" class="form-label">其他特殊需求(如其他飲食需求等)</label>
+                    <input type="text" class="form-control" id="phone" name="other_require" >
+                </div>
+    
+                <div class="mb-3">
+                    <label for="phone" class="form-label">有任何疑問都歡迎提出(❁´◡`❁)</label>
+                    <input type="text" class="form-control" id="phone" name="other_speak">
+                </div>
+                <!-- <div class="mb-3">
+                    <label for="pdf" class="form-label">PDF文件</label>
+                    <input type="file" class="form-control" id="pdf" name="pdf" accept=".pdf">
+                </div> -->
+                <button type="submit" class="btn btn-primary">提交</button>
+                <br></br>
+            </form>
+        </div>
+
+        <!-- Footer-->
+        <footer class="bg-dark py-4 mt-auto">
+            <div class="container px-5">
+                <div class="row align-items-center justify-content-between flex-column flex-sm-row">
+                    <div class="col-auto"><div class="small m-0 text-white">IZCC &copy; Website 2023</div></div>
+                    
+                </div>
+            </div>
+        </footer>
+        <!-- Bootstrap core JS-->
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
+        <!-- Core theme JS-->
+        <script src="static/scripts.js"></script>
+    </body>
+</html>

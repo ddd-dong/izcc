@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+        <meta name="description" content="" />
+        <meta name="author" content="" />
+        <title>IZCC</title>
+        <!-- Favicon-->
+        <link rel="icon" type="image/x-icon" href="static/IZCC1.png" />
+        <!-- Bootstrap icons-->
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css" rel="stylesheet" />
+        <!-- Core theme CSS (includes Bootstrap)-->
+        <link href="static/styles.css" rel="stylesheet" />
+    </head>
+    <body class="d-flex flex-column h-100">
+        <main class="flex-shrink-0">
+        
+            <!-- Navigation-->
+            <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+                <div class="container px-5">
+                    <a class="navbar-brand" href="{{url_for('home')}}">IZCC</a>
+                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation"><span class="navbar-toggler-icon"></span></button>
+                    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                        <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+                            <li class="nav-item"><a class="nav-link" href="{{url_for('home')}}">首頁</a></li>
+                            <li class="nav-item"><a class="nav-link" href="{{url_for('about')}}">關於我們</a></li>
+                            <li class="nav-item"><a class="nav-link" href="{{url_for('class_intr')}}">課程介紹</a></li>
+                            <li class="nav-item"><a class="nav-link" href="{{url_for('sign_up')}}">報名</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </nav>
+            <!-- Page Content-->
+            <section class="py-5">
+                <div class="container px-5 my-5">
+                    <div class="text-center mb-5">
+                        <h1 class="fw-bolder">課程內容</h1>
+                        <!-- <p class="lead fw-normal text-muted mb-0">Company portfolio</p> -->
+                    </div>
+                    <div class="row gx-5">
+                        <div class="col-lg-6 mb-3">
+                            <div class="position-relative mb-5">
+                                <img class="img-fluid rounded-3 mb-3" src="static/C++.png" alt="..." />
+                                <a class="h3 fw-bolder text-decoration-none link-dark stretched-link" href="https://www.youtube.com/watch?v=dQw4w9WgXcQ">C++</a>
+                                <p class="lead fw-normal text-muted mb-0">在這堂課你可以學到：<br>
+                                    ．輸入輸出<br>
+                                    ．迴圈<br>
+                                    ．條件判斷<br>
+                                    ．陣列……等基礎語法。<br>
+                                    更進一步的還有實作課程，你可以親手寫出屬於自己的小專案，體驗到前所未有的成就感！<br>
+                                    更何況，這門課也是高一資訊課的最佳前導，讓你事先熟悉相關概念，輕鬆應對未來的學習挑戰。不論你是完全零基礎還是已經有些程式基礎的學弟妹，都適合參加。</p>
+                            </div>
+                        </div>
+                        <div class="col-lg-6 mb-3">
+                            <div class="position-relative mb-5 mb-lg-0">
+                                <img class="img-fluid rounded-3 mb-3" src="static/OPENCV.png" alt="..." />
+                                <a class="h3 fw-bolder text-decoration-none link-dark stretched-link" href="https://www.youtube.com/watch?v=dQw4w9WgXcQ">OpenCV</a>
+                                <p class="lead fw-normal text-muted mb-0">在這堂課你可以學到：<br>
+                                    -OpenCV的基礎語法與功能<br>
+                                    -電腦視覺的應用<br>
+                                    
+                                    OpenCV也常被應用於臉部辨識、手勢辨識、圖像分割等，是一個用途廣泛且功能強大的領域。<br>
+                                    
+                                    備註:雖然OpenCV可使用多種不同語言進行開發，但本課程將使用Python進行教學，需要使用 Python 程式知識（若遇到一些較難語法會再做複習），如語法、變數、函式等。<br></p>
+                            </div>
+                        </div>
+                        
+                        <div class="col-lg-6 mb-3">
+                            <div class="position-relative">
+                                <img class="img-fluid rounded-3 mb-3" src="static/PYTHON.png" alt="..." />
+                                <a class="h3 fw-bolder text-decoration-none link-dark stretched-link" href="https://www.youtube.com/watch?v=dQw4w9WgXcQ">Python</a>
+                                <p class="lead fw-normal text-muted mb-0">在這堂課你可以學到：<br>
+                                    - 輸入(input)、輸出(print)<br>
+                                    - 註解(comment)<br>
+                                    - 變數、變數型態轉換<br>
+                                    - f-string<br>
+                                    - 算術運算子...等基礎語法<br>
+                                    
+                                    並且透過一些基礎的實作，讓你輕鬆學會Python基礎語法。無論你是完全沒有編程經驗，或已有一些程式基礎，這門課都適合你。</p>
+                            </div>
+                        </div>
+                        <div class="col-lg-6 mb-3">
+                            <div class="position-relative">
+                                <img class="img-fluid rounded-3 mb-3" src="static/TKINTER.png" alt="..." />
+                                <a class="h3 fw-bolder text-decoration-none link-dark stretched-link" href="https://www.youtube.com/watch?v=dQw4w9WgXcQ">Tkinter</a>
+                                <p class="lead fw-normal text-muted mb-0">在這堂課你可以學到：<br>
+                                    -使用 Tkinter 建立各種視窗介面<br>
+                                    -控制元件<br>
+                                    -處理使用者輸入<br>
+                                    -事件處理等相關技巧<br>
+                                    Tkinter 功能豐富且易於學習，適合用於開發各種視窗應用程式，包括圖形化工具、資料視覺化、遊戲、教育軟體等。無論是初學者還是有經驗的開發者，都可以藉助 Tkinter 輕鬆建立吸引人的使用者介面。<br>
+                                    備註:本課程需要使用 Python 程式知識(若遇到一些較難語法會再做複習），如語法、變數、函
+                                    式等。</p>
+                            </div>
+                        </div>
+                        <div class="col-lg-6 mb-3">
+                            <div class="position-relative mb-5">
+                                <img class="img-fluid rounded-3 mb-3" src="static/AI.png" alt="..." />
+                                <a class="h3 fw-bolder text-decoration-none link-dark stretched-link" href="https://www.youtube.com/watch?v=dQw4w9WgXcQ">AI</a>
+                                <p class="lead fw-normal text-muted mb-0">本課程將就人工智慧中幾個常見的領域，如強化學習、機器學習和深度學習等，進行簡單的介紹。並帶領學員使用機器學習訓練簡易的模型進行資料的預測。</p>
+                            </div>
+                        </div>
+                        <div class="col-lg-6 mb-3">
+                            <div class="position-relative mb-5">
+                                <img class="img-fluid rounded-3 mb-3" src="static/HTML.png" alt="..." />
+                                <a class="h3 fw-bolder text-decoration-none link-dark stretched-link" href="https://www.youtube.com/watch?v=dQw4w9WgXcQ">HTML</a>
+                                <p class="lead fw-normal text-muted mb-0">這門課將介紹網頁的基本設計排版，如字體字型大小、放上圖片、連結等……。HTML是Hyper Text Markup Language 的簡稱，是一種建立於網頁的標準標記語言，易於學習又執行快速，常與CSS與JavaScript 一起被眾多網站用於設計網頁、網頁應用程式</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="container px-5 my-5">
+                    <a class="btn btn-lg btn-primary" href="{{url_for('sign_up')}}">立即報名</a>
+                </div>
+            </section>
+        </main>
+        <!-- Footer-->
+        <footer class="bg-dark py-4 mt-auto">
+            <div class="container px-5">
+                <div class="row align-items-center justify-content-between flex-column flex-sm-row">
+                    <div class="col-auto"><div class="small m-0 text-white">IZCC &copy; Website 2023</div></div>
+                   
+                </div>
+            </div>
+        </footer>
+        <!-- Bootstrap core JS-->
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
+        <!-- Core theme JS-->
+        <script src="static/scripts.js"></script>
+    </body>
+</html>

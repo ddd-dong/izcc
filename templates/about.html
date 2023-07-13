@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+        <meta name="description" content="" />
+        <meta name="author" content="" />
+        <title>IZCC</title>
+        <!-- Favicon-->
+        <link rel="icon" type="image/x-icon" href="static/IZCC1.png" />
+        <!-- Bootstrap icons-->
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css" rel="stylesheet" />
+        <!-- Core theme CSS (includes Bootstrap)-->
+        <link href="/static/styles.css" rel="stylesheet" />
+    </head>
+    <body class="d-flex flex-column">
+        <main class="flex-shrink-0">
+            <!-- Navigation-->
+            <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+                <div class="container px-5">
+                    <a class="navbar-brand" href="{{url_for('home')}}">IZCC</a>
+                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation"><span class="navbar-toggler-icon"></span></button>
+                    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                        <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+                            <li class="nav-item"><a class="nav-link" href="{{url_for('home')}}">首頁</a></li>
+                            <li class="nav-item"><a class="nav-link" href="{{url_for('about')}}">關於我們</a></li>
+                            <li class="nav-item"><a class="nav-link" href="{{url_for('class_intr')}}">課程介紹</a></li>
+                            <li class="nav-item"><a class="nav-link" href="{{url_for('sign_up')}}">報名</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </nav>
+            
+            <!-- About section one-->
+            <section class="py-5 bg-light" id="scroll-target">
+                <div class="container px-5 my-5">
+                    <div class="row gx-5 align-items-center">
+                        <div class="col-lg-6"><img class="img-fluid rounded mb-5 mb-lg-0" style="width: 70%;" src="static/IZCC1.png" alt="..." /></div>
+                        <div class="col-lg-6">
+                            <h2 class="fw-bolder">IZCC</h2>
+                            <p class="lead fw-normal text-muted mb-0">IZCC由建中資訊(INFOR)、成功電研(CKCSC)、中山資研(ZSISC)、景美電資(CMIOC)組成。IZCC每年都會共同舉辦一系列精彩的活動，
+                            包含迎新、暑訓、秋遊、聯課等等。同時週一到週五放學後也將共同舉辦放課(小社課)，
+                            開學後會有課表出來，歡迎有興趣的同學來參加！IZCC以學習電腦程式設計為主包含但不限於語法教學、專案開發、人工智慧、資訊安全等等。歡迎各位在這裡交新朋友、聯絡感情。</p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <!-- About section two-->
+            <section class="py-5">
+                <div class="container px-5 my-5">
+                    <div class="row gx-5 align-items-center">
+                        <div class="col-lg-6 order-first order-lg-last"><img class="img-fluid rounded mb-5 mb-lg-0"  style="width: 90%;" src="static/title.png" alt="..." /></div>
+                        <div class="col-lg-6">
+                            <h2 class="fw-bolder">暑訓</h2>
+                            <p class="lead fw-normal text-muted mb-0">放暑假了！沒事做對吧？快來參加我們四校聯合的暑訓「夏日建景楓成畫」豐富的活動跟遊戲等你來解鎖！還可以在玩遊戲的過程中學到一大堆平常學不到的程式知識還不快報名嗎 帶領你進入夢幻的程式世界中 你的暑假絕對豐富又精彩！</p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+           <!-- About section one-->
+           <section class="py-5 bg-light" id="scroll-target">
+            <div class="container px-5 my-5">
+                <div class="row gx-5 align-items-center">
+                    <div class="col-lg-6"><img class="img-fluid rounded mb-5 mb-lg-0" style="width: 70%;" src="static/ckcsc.jpg" alt="..." /></div>
+                    <div class="col-lg-6">
+                        <h2 class="fw-bolder">成功電研CKCSC</h2>
+                        <p class="lead fw-normal text-muted mb-0">成電是一個以程式設計為主軸的社團，目前著重於競技程式與專案開發，未來希望可以推動資安(CTF)的教學。目前與建中資訊、中山資研，景美電資合組IZCC 、會一起辦活動、小社課等等。</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- About section two-->
+        <section class="py-5">
+            <div class="container px-5 my-5">
+                <div class="row gx-5 align-items-center">
+                    <div class="col-lg-6 order-first order-lg-last"><img class="img-fluid rounded mb-5 mb-lg-0"  style="width: 90%;" src="static/infor.jpg" alt="..." /></div>
+                    <div class="col-lg-6">
+                        <h2 class="fw-bolder">建中資訊INFOR</h2>
+                        <p class="lead fw-normal text-muted mb-0">大家好，我們是建中資訊不是建中電研也不是建中資研，簡稱建資！
+建資身為學術性社團的一員，固定的社課，不論是放學社課與大社課是建資一直以來的教學核心，就是這樣的根支撐起建資這棵大樹。建資的社課內容廣泛多元，如Python, C++,HTML等等，不僅會依據講師的專業調整社課內容，更會努力使全體有參與該堂課的社員都可以滿載而歸。</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- About section one-->
+        <section class="py-5 bg-light" id="scroll-target">
+            <div class="container px-5 my-5">
+                <div class="row gx-5 align-items-center">
+                    <div class="col-lg-6"><img class="img-fluid rounded mb-5 mb-lg-0" style="width: 70%;" src="static/zsisc.jpg" alt="..." /></div>
+                    <div class="col-lg-6">
+                        <h2 class="fw-bolder">中山資研ZSISC</h2>
+                        <p class="lead fw-normal text-muted mb-0">大家好，我們是中山資研，也可以叫楓資！我們是一個以資訊為主軸的學術類社團，社課內容以C++為主！主要的友社有ICC，四校不只有學術性的交流，也共同舉辦許多活動，例如春遊，暑訓，秋遊，耶晚等，讓學妹們不只可以在這裡學到許多新東西，也可以認識許多志同道合的朋友！</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- About section two-->
+        <section class="py-5">
+            <div class="container px-5 my-5">
+                <div class="row gx-5 align-items-center">
+                    <div class="col-lg-6 order-first order-lg-last"><img class="img-fluid rounded mb-5 mb-lg-0"  style="width: 90%;" src="static/cmioc.jpeg" alt="..." /></div>
+                    <div class="col-lg-6">
+                        <h2 class="fw-bolder">景美電資CMIOC</h2>
+                        <p class="lead fw-normal text-muted mb-0">大家好我們是景美電資cmioc 
+                            全名是景美女中電腦資訊社
+                            我們平常社課分成程式班與網美班
+                            程式班主要是上c++ 
+                            網美班主要是上HTML與CSS
+                            主要的友社是建中資訊、成功電研、中山資研
+                            四校常會一起共同舉辦活動
+                            希望學妹能夠在這學到東西，也交到新朋友</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+            <!-- Team members section-->
+            <section class="py-5 bg-light">
+                <div class="container px-5 my-5">
+                    <div class="text-center">
+                        <h2 class="fw-bolder">四校</h2>
+                        <p class="lead fw-normal text-muted mb-5">izcc</p>
+                    </div>
+                    <div class="row gx-5 row-cols-1 row-cols-sm-2 row-cols-xl-4 justify-content-center">
+                        <div class="col mb-5 mb-5 mb-xl-0">
+                            <div class="text-center">
+                                <img class="img-fluid rounded-circle mb-4 px-4" src="static/ckcsc.jpg" alt="..." />
+                                <h5 class="fw-bolder">成功電研</h5>
+                                <div class="fst-italic text-muted">CKCSC</div>
+                            </div>
+                        </div>
+                        <div class="col mb-5 mb-5 mb-xl-0">
+                            <div class="text-center">
+                                <img class="img-fluid rounded-circle mb-4 px-4" src="static/infor.jpg" alt="..." />
+                                <h5 class="fw-bolder">建中資訊</h5>
+                                <div class="fst-italic text-muted">INFOR</div>
+                            </div>
+                        </div>
+                        <div class="col mb-5 mb-5 mb-sm-0">
+                            <div class="text-center">
+                                <img class="img-fluid rounded-circle mb-4 px-4" src="static/zsisc.jpg" alt="..." />
+                                <h5 class="fw-bolder">中山資研</h5>
+                                <div class="fst-italic text-muted">ZSISC</div>
+                            </div>
+                        </div>
+                        <div class="col mb-5">
+                            <div class="text-center">
+                                <img class="img-fluid rounded-circle mb-4 px-4" src="static/cmioc.jpeg" alt="..." />
+                                <h5 class="fw-bolder">景美電資</h5>
+                                <div class="fst-italic text-muted">CMIOC</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </main>
+        <!-- Footer-->
+        <footer class="bg-dark py-4 mt-auto">
+            <div class="container px-5">
+                <div class="row align-items-center justify-content-between flex-column flex-sm-row">
+                    <div class="col-auto"><div class="small m-0 text-white">IZCC &copy; Website 2023</div></div>
+                    
+                </div>
+            </div>
+        </footer>
+        <!-- Bootstrap core JS-->
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
+        <!-- Core theme JS-->
+        <script src="/static/scripts.js"></script>
+    </body>
+</html>
