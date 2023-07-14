@@ -49,10 +49,11 @@
                 </div>
             </div>
         </header>
+        
         <div class="container">
-            <br></br>
+            <br>
             <form method="post" action="{{ url_for('save_data') }}" enctype="multipart/form-data">
-                <br></br>
+                <br>
                 <h1>個人</h1>
                 <div class="mb-3">
                     <label for="email" class="form-label">電子郵件</label>
@@ -130,7 +131,7 @@
                         <option value="素">XL</option>
                         <option value="素">2L</option>
                     </select>
-                    <img class="mx-auto d-block img-fluid rounded-3 my-5"  src="IMG_8385.jpg" alt="">
+                    <img class="mx-auto d-block img-fluid rounded-3 my-5" style="width: 60%;" src="static/IMG_8385.jpg" alt="">
                 </div>
                 <div class="mb-3">
                     <label for="phone" class="form-label">其他特殊需求(如其他飲食需求等)</label>
@@ -146,8 +147,9 @@
                     <input type="file" class="form-control" id="pdf" name="pdf" accept=".pdf">
                 </div> -->
                 <button type="submit" class="btn btn-primary">提交</button>
-                <br></br>
+               
             </form>
+            <br>
         </div>
 
         <!-- Footer-->
@@ -155,7 +157,17 @@
             <div class="container px-5">
                 <div class="row align-items-center justify-content-between flex-column flex-sm-row">
                     <div class="col-auto"><div class="small m-0 text-white">IZCC &copy; Website 2023</div></div>
-                    
+                    <div class="col-auto">
+                        <a class="link-light small" href="{{url_for('home')}}">首頁</a>
+                        <span class="text-white mx-1">&middot;</span>
+                        <a class="link-light small" href="{{url_for('about')}}">關於我們</a>
+                        <span class="text-white mx-1">&middot;</span>
+                        <a class="link-light small" href="{{url_for('class_intr')}}">課程介紹</a>
+                        <span class="text-white mx-1">&middot;</span>
+                        <a class="link-light small" href="{{url_for('sign_up')}}">報名</a>
+                        <span class="text-white mx-1">&middot;</span>
+                        <a class="link-light small" href="https://www.instagram.com/izcc.summercamp.2023/">IG</a>
+                    </div>
                 </div>
             </div>
         </footer>

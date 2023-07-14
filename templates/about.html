@@ -35,8 +35,9 @@
             <section class="py-5 bg-light" id="scroll-target">
                 <div class="container px-5 my-5">
                     <div class="row gx-5 align-items-center">
-                        <div class="col-lg-6"><img class="img-fluid rounded mb-5 mb-lg-0" style="width: 70%;" src="static/IZCC1.png" alt="..." /></div>
+                        <div class="col-lg-6"><a href="https://www.instagram.com/izcc.summercamp.2023/"><img class="img-fluid rounded mb-5 mb-lg-0" style="width: 70%;" src="static/IZCC1.png" alt="..." /></a></div>
                         <div class="col-lg-6">
+
                             <h2 class="fw-bolder">IZCC</h2>
                             <p class="lead fw-normal text-muted mb-0">IZCC由建中資訊(INFOR)、成功電研(CKCSC)、中山資研(ZSISC)、景美電資(CMIOC)組成。IZCC每年都會共同舉辦一系列精彩的活動，
                             包含迎新、暑訓、秋遊、聯課等等。同時週一到週五放學後也將共同舉辦放課(小社課)，
@@ -123,28 +124,36 @@
                     <div class="row gx-5 row-cols-1 row-cols-sm-2 row-cols-xl-4 justify-content-center">
                         <div class="col mb-5 mb-5 mb-xl-0">
                             <div class="text-center">
-                                <img class="img-fluid rounded-circle mb-4 px-4" src="static/ckcsc.jpg" alt="..." />
+                                <a href="https://www.instagram.com/ckcsc36th_diary/">
+                                    <img class="img-fluid rounded-circle mb-4 px-4" src="static/ckcsc.jpg" alt="...">
+                                </a>
                                 <h5 class="fw-bolder">成功電研</h5>
                                 <div class="fst-italic text-muted">CKCSC</div>
                             </div>
                         </div>
                         <div class="col mb-5 mb-5 mb-xl-0">
                             <div class="text-center">
-                                <img class="img-fluid rounded-circle mb-4 px-4" src="static/infor.jpg" alt="..." />
+                                <a href="https://www.instagram.com/infor_36th/">
+                                    <img class="img-fluid rounded-circle mb-4 px-4" src="static/infor.jpg" alt="..." />
+                                </a>
                                 <h5 class="fw-bolder">建中資訊</h5>
                                 <div class="fst-italic text-muted">INFOR</div>
                             </div>
                         </div>
                         <div class="col mb-5 mb-5 mb-sm-0">
                             <div class="text-center">
-                                <img class="img-fluid rounded-circle mb-4 px-4" src="static/zsisc.jpg" alt="..." />
+                                <a href="https://www.instagram.com/zsisc30th/">
+                                    <img class="img-fluid rounded-circle mb-4 px-4" src="static/zsisc.jpg" alt="..." />
+                                </a>
                                 <h5 class="fw-bolder">中山資研</h5>
                                 <div class="fst-italic text-muted">ZSISC</div>
                             </div>
                         </div>
                         <div class="col mb-5">
                             <div class="text-center">
-                                <img class="img-fluid rounded-circle mb-4 px-4" src="static/cmioc.jpeg" alt="..." />
+                                <a href="https://www.instagram.com/cmioc__30th/">
+                                    <img class="img-fluid rounded-circle mb-4 px-4" src="static/cmioc.jpeg" alt="..." />
+                                </a>
                                 <h5 class="fw-bolder">景美電資</h5>
                                 <div class="fst-italic text-muted">CMIOC</div>
                             </div>
@@ -158,8 +167,19 @@
             <div class="container px-5">
                 <div class="row align-items-center justify-content-between flex-column flex-sm-row">
                     <div class="col-auto"><div class="small m-0 text-white">IZCC &copy; Website 2023</div></div>
-                    
+                    <div class="col-auto">
+                        <a class="link-light small" href="{{url_for('home')}}">首頁</a>
+                        <span class="text-white mx-1">&middot;</span>
+                        <a class="link-light small" href="{{url_for('about')}}">關於我們</a>
+                        <span class="text-white mx-1">&middot;</span>
+                        <a class="link-light small" href="{{url_for('class_intr')}}">課程介紹</a>
+                        <span class="text-white mx-1">&middot;</span>
+                        <a class="link-light small" href="{{url_for('sign_up')}}">報名</a>
+                        <span class="text-white mx-1">&middot;</span>
+                        <a class="link-light small" href="https://www.instagram.com/izcc.summercamp.2023/">IG</a>
+                    </div>
                 </div>
+
             </div>
         </footer>
         <!-- Bootstrap core JS-->

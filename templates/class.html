@@ -42,7 +42,7 @@
                         <div class="col-lg-6 mb-3">
                             <div class="position-relative mb-5">
                                 <img class="img-fluid rounded-3 mb-3" src="static/C++.png" alt="..." />
-                                <a class="h3 fw-bolder text-decoration-none link-dark stretched-link" href="https://www.youtube.com/watch?v=dQw4w9WgXcQ">C++</a>
+                                <a class="h3 fw-bolder text-decoration-none link-dark stretched-link" href="#!">C++</a>
                                 <p class="lead fw-normal text-muted mb-0">在這堂課你可以學到：<br>
                                     ．輸入輸出<br>
                                     ．迴圈<br>
@@ -55,7 +55,7 @@
                         <div class="col-lg-6 mb-3">
                             <div class="position-relative mb-5 mb-lg-0">
                                 <img class="img-fluid rounded-3 mb-3" src="static/OPENCV.png" alt="..." />
-                                <a class="h3 fw-bolder text-decoration-none link-dark stretched-link" href="https://www.youtube.com/watch?v=dQw4w9WgXcQ">OpenCV</a>
+                                <a class="h3 fw-bolder text-decoration-none link-dark stretched-link" href="#!">OpenCV</a>
                                 <p class="lead fw-normal text-muted mb-0">在這堂課你可以學到：<br>
                                     -OpenCV的基礎語法與功能<br>
                                     -電腦視覺的應用<br>
@@ -69,7 +69,7 @@
                         <div class="col-lg-6 mb-3">
                             <div class="position-relative">
                                 <img class="img-fluid rounded-3 mb-3" src="static/PYTHON.png" alt="..." />
-                                <a class="h3 fw-bolder text-decoration-none link-dark stretched-link" href="https://www.youtube.com/watch?v=dQw4w9WgXcQ">Python</a>
+                                <a class="h3 fw-bolder text-decoration-none link-dark stretched-link" href="#!">Python</a>
                                 <p class="lead fw-normal text-muted mb-0">在這堂課你可以學到：<br>
                                     - 輸入(input)、輸出(print)<br>
                                     - 註解(comment)<br>
@@ -83,7 +83,7 @@
                         <div class="col-lg-6 mb-3">
                             <div class="position-relative">
                                 <img class="img-fluid rounded-3 mb-3" src="static/TKINTER.png" alt="..." />
-                                <a class="h3 fw-bolder text-decoration-none link-dark stretched-link" href="https://www.youtube.com/watch?v=dQw4w9WgXcQ">Tkinter</a>
+                                <a class="h3 fw-bolder text-decoration-none link-dark stretched-link" href="#!">Tkinter</a>
                                 <p class="lead fw-normal text-muted mb-0">在這堂課你可以學到：<br>
                                     -使用 Tkinter 建立各種視窗介面<br>
                                     -控制元件<br>
@@ -97,14 +97,14 @@
                         <div class="col-lg-6 mb-3">
                             <div class="position-relative mb-5">
                                 <img class="img-fluid rounded-3 mb-3" src="static/AI.png" alt="..." />
-                                <a class="h3 fw-bolder text-decoration-none link-dark stretched-link" href="https://www.youtube.com/watch?v=dQw4w9WgXcQ">AI</a>
+                                <a class="h3 fw-bolder text-decoration-none link-dark stretched-link" href="#!">AI</a>
                                 <p class="lead fw-normal text-muted mb-0">本課程將就人工智慧中幾個常見的領域，如強化學習、機器學習和深度學習等，進行簡單的介紹。並帶領學員使用機器學習訓練簡易的模型進行資料的預測。</p>
                             </div>
                         </div>
                         <div class="col-lg-6 mb-3">
                             <div class="position-relative mb-5">
                                 <img class="img-fluid rounded-3 mb-3" src="static/HTML.png" alt="..." />
-                                <a class="h3 fw-bolder text-decoration-none link-dark stretched-link" href="https://www.youtube.com/watch?v=dQw4w9WgXcQ">HTML</a>
+                                <a class="h3 fw-bolder text-decoration-none link-dark stretched-link" href="#!">HTML</a>
                                 <p class="lead fw-normal text-muted mb-0">這門課將介紹網頁的基本設計排版，如字體字型大小、放上圖片、連結等……。HTML是Hyper Text Markup Language 的簡稱，是一種建立於網頁的標準標記語言，易於學習又執行快速，常與CSS與JavaScript 一起被眾多網站用於設計網頁、網頁應用程式</p>
                             </div>
                         </div>
@@ -120,8 +120,19 @@
             <div class="container px-5">
                 <div class="row align-items-center justify-content-between flex-column flex-sm-row">
                     <div class="col-auto"><div class="small m-0 text-white">IZCC &copy; Website 2023</div></div>
-                   
+                    <div class="col-auto">
+                        <a class="link-light small" href="{{url_for('home')}}">首頁</a>
+                        <span class="text-white mx-1">&middot;</span>
+                        <a class="link-light small" href="{{url_for('about')}}">關於我們</a>
+                        <span class="text-white mx-1">&middot;</span>
+                        <a class="link-light small" href="{{url_for('class_intr')}}">課程介紹</a>
+                        <span class="text-white mx-1">&middot;</span>
+                        <a class="link-light small" href="{{url_for('sign_up')}}">報名</a>
+                        <span class="text-white mx-1">&middot;</span>
+                        <a class="link-light small" href="https://www.instagram.com/izcc.summercamp.2023/">IG</a>
+                    </div>
                 </div>
+                
             </div>
         </footer>
         <!-- Bootstrap core JS-->

@@ -31,27 +31,30 @@
                 </div>
             </nav>
             <!-- Header-->
-            <header class="bg-dark py-5">
+            <header class="bg-dark py-5" style="background-image: url('static/home.png'); background-size: cover; background-position: center;">
                 <div class="container px-5">
                     <div class="row gx-5 align-items-center justify-content-center">
                         <div class="col-lg-8 col-xl-7 col-xxl-6">
-                            <div class="my-5 text-center text-xl-start">
+                            <div class="my-5 text-center text-xl-start" style="background-color: rgba(0, 0, 0, 0.5); padding: 40px; font-weight: bold;">
                                 <h1 class="display-5 fw-bolder text-white mb-2">izcc四校聯合暑訓</h1>
-                                <p class="lead fw-normal text-white-50 mb-2">大家好我們是建中資訊(INFOR)、中山資研(ZSISC)、成功電研(CKCSC)以及 景美電資(CMIOC)！！
+                                <p class="display-8 fw-bolder text-white mb-2">大家好我們是<br>建中資訊(INFOR)<br>中山資研(ZSISC)<br>成功電研(CKCSC)<br>景美電資(CMIOC)<br>
                                     8/7～8/13四校聯合暑訓在建中、中山和成功舉行！！
-                                   </p>
-                                   <br>
-                                <p class="lead fw-normal text-white-50">
+                                </p>
+                                <br>
+                                <p class="display-8 fw-bolder text-white mb-2">
                                     報名時間：即日起至7/25 ，在暑訓網站上填寫報名資訊，即為報名成功。(填寫完請記得按提交喔！)   <br>
                                     公告錄取名單：7/26在ig和fb皆會發文公告，請記得持續關注我們的暑訓帳號。 <br>
-                                    繳費期間：7/26至7/30</p>
+                                    繳費期間：7/26至7/30
+                                </p>
                                 <div class="d-grid gap-3 d-sm-flex justify-content-sm-center justify-content-xl-start">
                                     <a class="btn btn-primary btn-lg px-4 me-sm-3" href="{{url_for('sign_up')}}">報名</a>
                                     <a class="btn btn-outline-light btn-lg px-4" href="{{url_for('about')}}">更多</a>
                                 </div>
                             </div>
+                            
+                            
                         </div>
-                        <div class="col-xl-5 col-xxl-6 d-none d-xl-block text-center"><img class="img-fluid rounded-3 my-5" src="static/home.png"/></div>
+                        <div class="col-xl-5 col-xxl-6 d-none d-xl-block text-center"><img class="img-fluid rounded-3 my-5" src="#"/></div>
                     </div>
                 </div>
             </header>
@@ -73,7 +76,17 @@
             <div class="container px-5">
                 <div class="row align-items-center justify-content-between flex-column flex-sm-row">
                     <div class="col-auto"><div class="small m-0 text-white">IZCC &copy;  Website 2023</div></div>
-                    
+                    <div class="col-auto">
+                        <a class="link-light small" href="{{url_for('home')}}">首頁</a>
+                        <span class="text-white mx-1">&middot;</span>
+                        <a class="link-light small" href="{{url_for('about')}}">關於我們</a>
+                        <span class="text-white mx-1">&middot;</span>
+                        <a class="link-light small" href="{{url_for('class_intr')}}">課程介紹</a>
+                        <span class="text-white mx-1">&middot;</span>
+                        <a class="link-light small" href="{{url_for('sign_up')}}">報名</a>
+                        <span class="text-white mx-1">&middot;</span>
+                        <a class="link-light small" href="https://www.instagram.com/izcc.summercamp.2023/">IG</a>
+                    </div>
                 </div>
             </div>
         </footer>
